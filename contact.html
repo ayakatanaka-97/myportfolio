@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AyakaTanakaのポートフォリオです</title>
+    <meta name="description" content="AyakaTanakaのポートフォリオです" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="AyakaTanaka" />
+    <meta property="og:url" content="サイトのURL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AyakaTanaka" />
+    <meta property="og:description" content="たなかあやかのポートフォリオ" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="たなかあやか。" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- <header class="l_header js_header">
+      <h1 class="l_header-logo">
+        <a href="index.html" class=""><span>A</span>yaka <span>T</span>anaka</a>
+      </h1>
+      <nav class="l_header-nav js_navigation">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="#works" class="l_header-nav_link js_nav_link">WORKS</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="#about" class="l_header-nav_link js_nav_link">ABOUT</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="#skill" class="l_header-nav_link js_nav_link">SKILL</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="#contact" class="l_header-nav_link js_nav_link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+      </button>
+    </header> -->
+
+    <main class="contact_main">
+      <div class="l_contents contact">
+        <div class="m_title-container" id="contact">
+          <div class="m_title-circle"></div>
+          <!-- /.m_title-circle -->
+          <div class="m_title_text-container">
+            <h2 class="m_title-title">
+              <span class="m_title-white">C</span>ONTACT
+            </h2>
+            <p class="m_title-text">お問い合わせ</p>
+            <!-- /.m_title-text -->
+            <img
+              src="img/line.png"
+              width="401"
+              height="27"
+              class="m_title-line"
+            />
+          </div>
+          <!-- /.m_title_text-container -->
+          <p class="contact_title_subtext">
+            以下のフォームからご記入ください。
+          </p>
+        </div>
+        <!-- /.m_title-container -->
+
+        <div class="contact_kv">
+          <div class="contact_kv-inner l_container-lg">
+            <div class="contact_kv-box">
+              <img
+                src="img/kv-img.png"
+                height="476"
+                width="341"
+                class="contact_kv-img"
+              />
+
+              <!-- <h1 class="m_kv-title">お問い合わせ</h1> -->
+            </div>
+            <!-- /.m_kv-box -->
+          </div>
+          <!-- /.m_kv-inner -->
+        </div>
+        <!-- /.l_contents -->
+      </div>
+      <!-- /.contact_kv -->
+
+      <div class="l_contents">
+        <div class="l_container-sm">
+          <form action="" class="contact_form">
+            <dl class="contact_form_list">
+              <dt class="contact_form_heading">
+                会社名<span class="contact_form_example"
+                  >例.株式会社Sample</span
+                >
+              </dt>
+              <dd class="contact_form_detail">
+                <input type="text" class="contact_form_input" />
+              </dd>
+              <dt class="contact_form_heading">
+                お名前<span class="contact_form_example">例.山田太郎</span>
+                <span class="contact_form_required">必須</span>
+              </dt>
+              <dd class="contact_form_detail">
+                <input type="text" class="contact_form_input" />
+              </dd>
+              <dt class="contact_form_heading">
+                お名前 (フリガナ)<span class="contact_form_example"
+                  >例.ヤマダタロウ</span
+                >
+                <span class="contact_form_required">必須</span>
+              </dt>
+              <dd class="contact_form_detail">
+                <input type="text" class="contact_form_input" />
+              </dd>
+              <dt class="contact_form_heading">
+                電話番号<span class="contact_form_example">例.0312345678</span>
+              </dt>
+              <dd class="contact_form_detail">
+                <input type="tel" class="contact_form_input" />
+              </dd>
+              <dt class="contact_form_heading">
+                メールアドレス<span class="contact_form_example"
+                  >例.info@sample.com</span
+                >
+                <span class="contact_form_required">必須</span>
+              </dt>
+              <dd class="contact_form_detail">
+                <input type="email" class="contact_form_input" />
+              </dd>
+              <dt class="contact_form_heading">
+                お問い合わせ内容
+                <span class="contact_form_required">必須</span>
+              </dt>
+              <dd class="contact_form_detail">
+                <textarea
+                  class="contact_form_textarea"
+                  placeholder="ご自由にご記入ください。"
+                ></textarea>
+              </dd>
+            </dl>
+
+            <div class="contact_form_btn-wrapper">
+              <div class="m_btn">
+                <input
+                  type="submit"
+                  class="m_btn_input"
+                  value="この内容で送信する"
+                />
+              </div>
+              <!-- /.m_btn -->
+            </div>
+            <!-- /.contact_form_btn-wrapper -->
+
+            <div class="contact_form_return-btn-wrapper">
+              <a href="index.html" class="m_return-btn">トップに戻る</a
+              ><!-- m_btn/ -->
+            </div>
+            <!-- /.contact_form_btn-wrapper -->
+          </form>
+        </div>
+        <!-- /.l_container-sm -->
+      </div>
+      <!-- /.l_contents -->
+    </main>
+
+    <footer class="l_footer">
+      <div class="l_footer_triangle"></div>
+      <!-- /.l_footer_triangle -->
+      <p class="l_footer_logo">Ayaka Tanaka</p>
+      <ul class="l_footer_list">
+        <li class="l_footer_item">
+          <a href="#work" class="l_footer_link">WORKS</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="#about" class="l_footer_link">ABOUT</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="#skill" class="l_footer_link">SKILL</a>
+        </li>
+        <li class="l_footer_item">
+          <a href="#contact" class="l_footer_link">CONTACT</a>
+        </li>
+      </ul>
+      <!-- <p class="l_footer-copyright">&copy; 2018 sample.inc</p> -->
+    </footer>
+  </body>
+</html>
